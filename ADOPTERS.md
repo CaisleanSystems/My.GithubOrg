@@ -5,6 +5,7 @@ These adopters use the project either directly or as a reference for their own i
 
 | Organization | Details                                                                   | References                                                |
 | ------------ | ------------------------------------------------------------------------- | --------------------------------------------------------- |
+| [AWS]     | AWS used the portal to illustrate how a model InnerSource solution would work using AWS services. |  Blog post [Building an InnerSource ecosystem using AWS DevOps tools] |
 | [Airbus]     | The Portal was used by Airbus as a Proof of Concept, but they do not use it productively. |  [InnerSource Summit 23 - Bootstrapping InnerSource at Airbus][isc-summit-2023-airbus] |
 | [Mercado Libre][Meli]   | Mercado Libre is using this portal internally for discovery of InnerSource Projects | See the "known instances" section of the [InnerSource Portal pattern](https://patterns.innersourcecommons.org/p/innersource-portal) |
 | [Mercedes-Benz] | Mercedes-Benz implemented the portal internally | see the section "One problem: Visibility of Inner Source projects" section at [Mercedes-Benz Tech Innovation to Sponsor InnerSource Commons][mercedes-reference] |
@@ -14,6 +15,8 @@ These adopters use the project either directly or as a reference for their own i
 | Your org...  | could be listed...                                                        | here!                                                     |
 
 [known_instances]: https://patterns.innersourcecommons.org/p/innersource-portal#known-instances
+[AWS]: https://aws.amazon.com/
+[Building an InnerSource ecosystem using AWS DevOps tools]: https://aws.amazon.com/blogs/devops/building-an-innersource-ecosystem-using-aws-devops-tools/
 [Airbus]: https://www.airbus.com/en
 [isc-summit-2023-airbus]: https://youtu.be/acOq0ulkPnY?si=WiU2iHH40zQWmWwP
 [Meli]: https://www.mercadolibre.com.ar/institucional
