@@ -81,7 +81,7 @@ jobs:
         github-token: ${{ steps.generate_token_approver.outputs.token }}
         number: ${{ steps.cpr.outputs.pull-request-number }}
         method: squash
-    - uses: actions/upload-artifact@v3
+    - uses: actions/upload-artifact@v4
       if: always()
       with:
         name: repo-artifact
