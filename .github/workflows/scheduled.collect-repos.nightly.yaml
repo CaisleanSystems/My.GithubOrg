@@ -5,8 +5,6 @@ on:
   schedule:
     - cron: "0 1 * * *"
 
-permissions: write-all
-
 env:
   ORGANIZATION: "CaisleanSystems"
   SCANNER_APP_ID: 2856815
