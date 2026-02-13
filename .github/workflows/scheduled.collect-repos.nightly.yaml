@@ -1,0 +1,91 @@
+name: InnerSource repos crawler - "CaisleanSystems"
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 1 * * *"
+
+env:
+  ORGANIZATION: "CaisleanSystems"
+  SCANNER_APP_ID: 2856815
+  SCANNER_INSTALLATION_ID: 109861758
+  LOCAL_APP_ID: 2856832
+  LOCAL_INSTALLATION_ID: 109862291
+  APPROVAL_APP_ID: 2856867
+  APPROVAL_INSTALLATION_ID: 109863564
+  
+jobs:
+  build:
+    name: InnerSource repo crawler
+    runs-on: [ ubuntu-latest ]
+    steps:
+    - name: Generate Scanner GitHub App Token
+      id: generate_token_scanner
+      uses: tibdex/github-app-token@v1
+      with:
+        app_id: ${{ env.SCANNER_APP_ID }}
+        private_key: ${{ secrets.BOT_SCANNER_PRIVATE_KEY }}
+        installation_id: ${{ env.SCANNER_INSTALLATION_ID }}
+    - name: Generate Local GitHub App Token
+      id: generate_token_local
+      uses: tibdex/github-app-token@v1
+      with:
+        app_id: ${{ env.LOCAL_APP_ID }}
+        private_key: ${{ secrets.BOT_LOCAL_PRIVATE_KEY }}
+        installation_id: ${{ env.LOCAL_INSTALLATION_ID }}
+    - name: Generate Approval GitHub App Token
+      id: generate_token_approver
+      uses: tibdex/github-app-token@v1
+      with:
+        app_id: ${{ env.APPROVAL_APP_ID }}
+        private_key: ${{ secrets.BOT_APPROVER_PRIVATE_KEY }}
+        installation_id: ${{ env.APPROVAL_INSTALLATION_ID }}
+    - name: Checkout code
+      uses: actions/checkout@v3
+    - name: Run crawler tool
+      uses: docker://ghcr.io/zkoppert/innersource-crawler:v1
+      env:
+        GH_TOKEN: ${{ steps.generate_token_scanner.outputs.token }}
+        ORGANIZATION: ${{ env.ORGANIZATION }}
+        TOPIC: public
+    - name: Create Pull Request
+      id: cpr
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ steps.generate_token_local.outputs.token }}
+        commit-message: "chore(meta): Upsert repos.json"
+        title: '[Chore] Onboard repos datasource'
+        body: This is an automated PR to update the data source required for inner source portal
+        branch: onboard-innersource
+        labels: automation
+        delete-branch: true
+    - name: Status
+      run: |
+        echo "Pull Request Number - ${{ steps.cpr.outputs.pull-request-number }}"
+        echo "Pull Request URL - ${{ steps.cpr.outputs.pull-request-url }}"
+        echo "Pull Request Operation - ${{ steps.cpr.outputs.pull-request-operation }}"
+        echo "Pull Request Head SHA - ${{ steps.cpr.outputs.pull-request-head-sha }}"
+        echo
+        echo "======== Added/Updated datasource file ========"
+        cat repos.json
+        echo
+        echo ""
+    - name: Approve Pull Request
+      uses: juliangruber/approve-pull-request-action@v1.1.1
+      with:
+        github-token: ${{ steps.generate_token_approver.outputs.token }}
+        number: ${{ steps.cpr.outputs.pull-request-number }}
+    - name: Merge Pull Request
+      uses: juliangruber/merge-pull-request-action@v1
+      with:
+        github-token: ${{ steps.generate_token_approver.outputs.token }}
+        number: ${{ steps.cpr.outputs.pull-request-number }}
+        method: squash
+    - uses: actions/upload-artifact@v3
+      if: always()
+      with:
+        name: repo-artifact
+        path: ./repos.json
+        if-no-files-found: error
+
+    
