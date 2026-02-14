@@ -93,6 +93,8 @@
         "allow_forking": true,
         "is_template": false,
         "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
         "topics": [
             "public"
         ],
@@ -108,7 +110,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 891,
+        "score": 887,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -167,7 +169,7 @@
             "topics": [
                 "public"
             ],
-            "score": 891
+            "score": 887
         }
     },
     {
@@ -264,6 +266,8 @@
         "allow_forking": true,
         "is_template": false,
         "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
         "topics": [
             "public"
         ],
@@ -279,7 +283,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 885,
+        "score": 882,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -338,7 +342,7 @@
             "topics": [
                 "public"
             ],
-            "score": 885
+            "score": 882
         }
     },
     {
@@ -435,6 +439,8 @@
         "allow_forking": true,
         "is_template": false,
         "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
         "topics": [
             "public"
         ],
@@ -450,10 +456,9 @@
             "triage": false,
             "pull": false
         },
-        "score": 877,
+        "score": 874,
         "_InnerSourceMetadata": {
             "participation": [
-                0,
                 0,
                 0,
                 0,
@@ -504,12 +509,13 @@
                 3,
                 0,
                 0,
+                0,
                 0
             ],
             "topics": [
                 "public"
             ],
-            "score": 877
+            "score": 874
         }
     },
     {
@@ -612,6 +618,8 @@
         "allow_forking": true,
         "is_template": false,
         "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
         "topics": [
             "matrix",
             "public",
@@ -629,7 +637,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 912,
+        "score": 908,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -681,8 +689,8 @@
                 0,
                 0,
                 0,
-                9,
-                34,
+                22,
+                21,
                 0
             ],
             "topics": [
@@ -690,7 +698,7 @@
                 "matrix",
                 "public"
             ],
-            "score": 912
+            "score": 908
         }
     },
     {
@@ -787,6 +795,8 @@
         "allow_forking": true,
         "is_template": false,
         "web_commit_signoff_required": false,
+        "has_pull_requests": true,
+        "pull_request_creation_policy": "all",
         "topics": [
             "public"
         ],
@@ -802,7 +812,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 872,
+        "score": 869,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -861,7 +871,7 @@
             "topics": [
                 "public"
             ],
-            "score": 872
+            "score": 869
         }
     }
 ]
