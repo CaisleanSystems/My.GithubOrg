@@ -110,10 +110,9 @@
             "triage": false,
             "pull": false
         },
-        "score": 866,
+        "score": 861,
         "_InnerSourceMetadata": {
             "participation": [
-                0,
                 0,
                 0,
                 0,
@@ -164,12 +163,13 @@
                 9,
                 0,
                 0,
+                0,
                 0
             ],
             "topics": [
                 "public"
             ],
-            "score": 866
+            "score": 861
         }
     },
     {
@@ -283,7 +283,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 861,
+        "score": 856,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -342,7 +342,7 @@
             "topics": [
                 "public"
             ],
-            "score": 861
+            "score": 856
         }
     },
     {
@@ -456,7 +456,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 852,
+        "score": 847,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -515,7 +515,7 @@
             "topics": [
                 "public"
             ],
-            "score": 852
+            "score": 847
         }
     },
     {
@@ -629,7 +629,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 954,
+        "score": 949,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -688,7 +688,7 @@
             "topics": [
                 "public"
             ],
-            "score": 954
+            "score": 949
         }
     },
     {
@@ -780,7 +780,7 @@
         "mirror_url": null,
         "archived": false,
         "disabled": false,
-        "open_issues_count": 0,
+        "open_issues_count": 1,
         "license": {
             "key": "mit",
             "name": "MIT License",
@@ -800,7 +800,7 @@
         ],
         "visibility": "public",
         "forks": 0,
-        "open_issues": 0,
+        "open_issues": 1,
         "watchers": 0,
         "default_branch": "main",
         "permissions": {
@@ -810,7 +810,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 887,
+        "score": 881,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -861,8 +861,8 @@
                 0,
                 0,
                 0,
-                0,
-                43,
+                1,
+                42,
                 0,
                 0
             ],
@@ -871,7 +871,7 @@
                 "matrix",
                 "public"
             ],
-            "score": 887
+            "score": 881
         }
     },
     {
@@ -985,7 +985,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 848,
+        "score": 842,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -1034,9 +1034,9 @@
                 0,
                 0,
                 0,
+                3,
+                3,
                 0,
-                3,
-                3,
                 0,
                 0,
                 0
@@ -1044,7 +1044,7 @@
             "topics": [
                 "public"
             ],
-            "score": 848
+            "score": 842
         }
     }
 ]
