@@ -111,7 +111,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 818,
+        "score": 813,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -171,7 +171,7 @@
                 "public",
                 "mga"
             ],
-            "score": 818
+            "score": 813
         }
     },
     {
@@ -286,7 +286,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 813,
+        "score": 808,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -346,7 +346,7 @@
                 "public",
                 "mga"
             ],
-            "score": 813
+            "score": 808
         }
     },
     {
@@ -461,7 +461,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 891,
+        "score": 885,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -513,15 +513,15 @@
                 0,
                 0,
                 0,
-                0,
                 1,
+                0,
                 0
             ],
             "topics": [
                 "public",
                 "mga"
             ],
-            "score": 891
+            "score": 885
         }
     },
     {
@@ -636,7 +636,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 805,
+        "score": 800,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -696,7 +696,7 @@
                 "public",
                 "mga"
             ],
-            "score": 805
+            "score": 800
         }
     },
     {
@@ -811,7 +811,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 800,
+        "score": 795,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -871,7 +871,7 @@
                 "public",
                 "mga"
             ],
-            "score": 800
+            "score": 795
         }
     },
     {
@@ -994,7 +994,7 @@
             "triage": false,
             "pull": false
         },
-        "score": 839,
+        "score": 834,
         "_InnerSourceMetadata": {
             "participation": [
                 0,
@@ -1056,7 +1056,7 @@
                 "public",
                 "mga"
             ],
-            "score": 839
+            "score": 834
         }
     }
 ]
